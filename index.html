@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fedd903292.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="continer">
+            <nav>
+                <img src="images/logo.png" class="logo" width="100px" height="60px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java FullStack Developer</p>
+                <h1>Hi, I'm <span>Utkrishna</span> <br>Naik from India </h1>
+            </div>
+        </div>
+    </div>
+    <!-- about page-->
+     <div id="about">
+        <div class="continer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/uk.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tit">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit id quibusdam nostrum, incidunt culpa repellat repudiandae, temporibus amet inventore iure, nobis ratione nemo harum suscipit voluptate minima nisi! Excepturi?</p>
+                    <div class="tab-tit">
+                        <p class="sub-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="sub-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Web Technology</span></li>
+                            <li><span>Spring</span></li>
+                            <li><span>Hibernate</span></li>
+                            <li><span>DS</span></li>
+                            <li><span>React</span></li>
+                            <li><span>Collection</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><h1>B.E(Computer Science)</h1></span></li>
+                            <li><span><h4>MOODLAKATTE INSTITUTE OF TECHNOLOGY KUNDAPURA</h4></span></li>
+                            <li><span>CGPA: 7.43</span></li>
+                            <li><span>Passout: 2024</span></li>
+                            
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><span><h1>12th </h1></span></li>
+                            <li><span><h4>MAHASATHI PRE UNIVERSITY COLLAGE</h4></span></li>
+                            <li><span>Parc: 60</span></li>
+                            
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><span><h1>10th </h1></span></li>
+                            <li><span><h4>GOVERNMENT HIGH SCHOOL KERWADI</h4></span></li>
+                            <li><span>Parc: 76</span></li>
+                            
+                        </ul>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+     <!--                Projects             -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-tit">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Task Management System</h2>
+                    <h3>Technology: Spring, HTML, CSS, MySQL, JavaScript,React</h3>
+                    <br>
+                    <p>Built a React-based frontend with CSS frameworks and JavaScript libraries, reducing
+                        page load times by minimum seconds and boosting user engagement.
+                        </p>
+                    <a href="https://github.com/Utkrishna/Task-Management-System">Leran More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Library-Management-System</h2>
+                    <h3>Technology: Spring, Hibernate, MySQL, HTML, CSS, and JavaScript</h3>
+                    <p> Efficient Book Tracking and Management – The system automates book issuance, returns, and tracking, reducing manual errors and improving library operations.</p>
+                    <a href="https://github.com/Utkrishna/Library-Management-System">Leran More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Student Management System</h2>
+                    <h3>Technology: Hibernate,MySQL,HTML,CSS</h3>
+                    <br>
+                    <p>Engineered Hibernate ORM integration to automate database table creation,
+                        reducing administrative setup time by 30+ hours and streamlining data management
+                        workflows</p>
+                    <a href="https://github.com/Utkrishna/Student-Management-System">Leran More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--contact-->
+     <div id="contact">
+        <div class="continer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titl">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>utkrishnanaik416@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9880387034</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/utkrishna-naik-82347b229"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Utkrishna"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/UtkrishnaNaikResumes.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea  name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Utkrishna <i class="fa-solid fa-heart"></i></p>
+        </div>
+     </div>
+     <script>
+
+        var tablinks=document.getElementsByClassName("sub-link");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+     </script>
+</body>
+</html>
